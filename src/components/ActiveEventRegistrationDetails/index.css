@@ -1,0 +1,27 @@
+/* Write your CSS here */
+.hap {
+  text-align: center;
+  height: 25px;
+  max-width: 40%;
+  min-width: 40%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgr {
+  height: 100px;
+  text-align: center;
+}
+.imgr2 {
+  height: 100px;
+  margin-left: 100px;
+}
+.cen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 40%;
+  height: 100vh;
+}
