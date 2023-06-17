@@ -1,0 +1,13 @@
+.type {
+  border: solid;
+  width: 25%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.but1 {
+  height: 35px;
+  width: 180px;
+  margin-left: 10px;
+}

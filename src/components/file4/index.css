@@ -1,0 +1,84 @@
+.last {
+  border: solid;
+  width: 25%;
+  height: 100vh;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.match {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 45px;
+  width: 200px;
+  margin-left: 5px;
+}
+.mat1 {
+  height: 45px;
+  width: 35px;
+  border: solid;
+  border-color: rgb(150, 152, 153);
+  margin-right: 5px;
+}
+.free {
+  font-size: 20px;
+}
+.btn3 {
+  height: 45px;
+  width: 260px;
+}
+.con {
+  width: 260px;
+  margin-left: 4px;
+}
+.input6 {
+  height: 45px;
+  width: 223px;
+}
+.close {
+  display: flex;
+}
+.input5 {
+  height: 45px;
+  width: 260px;
+  margin: 5px;
+}
+.down {
+  display: flex;
+  justify-content: flex-start;
+}
+.btn5 {
+  background-color: transparent;
+  border: none;
+}
+.wr {
+  display: flex;
+  justify-content: start;
+}
+.img5 {
+  height: 15px;
+  margin-left: 190px;
+  margin-top: 20px;
+}
+.img {
+  height: 50px;
+}
+.res {
+  border: solid;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+.image {
+  align-self: flex-end;
+}
+.inside {
+  border: solid;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

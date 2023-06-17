@@ -1,4 +1,4 @@
-import Events from './components/Events'
+import Events from './components/file1'
 
 import './App.css'
 
