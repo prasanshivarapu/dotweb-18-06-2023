@@ -3,7 +3,7 @@ import {Component} from 'react'
 import './index.css'
 
 class Mainpage extends Component {
-  state = {name: '', email: '', mobile: '', state: ''}
+  state = {name: '', email: '', mobile: '', state: '', error: false}
 
   nameIn = event => {
     this.setState({name: event.target.value})
@@ -21,17 +21,22 @@ class Mainpage extends Component {
     this.setState({state: event.target.value})
   }
 
-  // submited = () => {
-  //   event.preventDefault()
-  //  }
+  submited = event => {
+    event.preventDefault()
+    const {name, email, mobile, state} = this.state
+    if (name === '' && email === '' && mobile === '' && state === '') {
+      this.setState({error: true})
+    }
+  }
 
   render() {
+    const {error} = this.state
     return (
       <div className="mainpage">
         <div className="get">
           <div className="book">
             <li className="h1">Book a Free Consultation</li>
-            <li>Get response within 24 hours</li>
+            <li className="with">Get response within 24 hours</li>
             <hr className="line" />
           </div>
           <form className="form" onSubmit={this.submited}>
@@ -44,7 +49,7 @@ class Mainpage extends Component {
                       className="inputcl"
                       id="name"
                       name="name"
-                      placeholder="name"
+                      placeholder="Your Name"
                       onChange={this.nameIn}
                     />
                   </div>
@@ -54,7 +59,7 @@ class Mainpage extends Component {
                       type="tel"
                       id="mobile"
                       name="mobile"
-                      placeholder="Mobile no"
+                      placeholder="Mobile Number"
                       onChange={this.mobileIn}
                     />
                   </div>
@@ -66,7 +71,7 @@ class Mainpage extends Component {
                       type="email"
                       id="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder="Email Address"
                       onChange={this.emailIn}
                     />
                   </div>
@@ -82,15 +87,16 @@ class Mainpage extends Component {
                 </div>
               </div>
             </div>
+
             <div className="btn">
               <button className="button" type="submit">
-                Submit
+                SEND NOW
               </button>
             </div>
           </form>
         </div>
         <div>
-          <h1>documents required to obtain an AYUSH Licence</h1>
+          <h1 className="doc">Documents required to obtain an AYUSH Licence</h1>
         </div>
       </div>
     )

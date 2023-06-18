@@ -6,19 +6,25 @@ const Types = () => (
       Overview
     </button>
     <button className="but1" type="button ">
-      Overview
+      Benfit
     </button>
     <button className="but1" type="button ">
-      Overview
+      Types
     </button>
     <button className="but1" type="button ">
-      Overview
+      Listicles
     </button>
     <button className="but1" type="button ">
-      Overview
+      Registration Procedure
     </button>
     <button className="but1" type="button ">
-      Overview
+      Other Information
+    </button>
+    <button className="but1" type="button ">
+      Corpbiz Support
+    </button>
+    <button className="but1" type="button ">
+      Faq
     </button>
   </div>
 )

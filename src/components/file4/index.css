@@ -1,11 +1,10 @@
 .last {
-  border: solid;
   width: 25%;
   height: 100vh;
   margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .match {
@@ -18,17 +17,41 @@
 }
 .mat1 {
   height: 45px;
-  width: 35px;
+  width: 120px;
   border: solid;
   border-color: rgb(150, 152, 153);
-  margin-right: 5px;
+  margin-right: 8px;
+  border-color: silver;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #ffffff;
 }
 .free {
   font-size: 20px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.lin {
+  width: 65px;
+  color: chocolate;
+  border-color: rgb(252, 112, 19);
 }
 .btn3 {
   height: 45px;
   width: 260px;
+  background-color: rgb(252, 112, 19);
+  color: white;
+  font-weight: 1000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .con {
   width: 260px;
@@ -36,49 +59,87 @@
 }
 .input6 {
   height: 45px;
-  width: 223px;
+  width: 203px;
+  border-color: #d9d9d9b9;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 6px;
+  border-width: 1px;
 }
 .close {
   display: flex;
+  background-color: #fdfff5;
 }
 .input5 {
   height: 45px;
   width: 260px;
   margin: 5px;
+  border: solid;
+  border-color: rgb(233, 245, 245);
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 6px;
+
+  border-width: 3px;
 }
 .down {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 .btn5 {
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 220px;
+}
+.into {
+  border: solid;
+  width: 45px;
+  height: 40px;
+  margin-top: 30px;
+}
+.ey {
+  width: 150px;
 }
 .wr {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .img5 {
   height: 15px;
-  margin-left: 190px;
-  margin-top: 20px;
+
+  margin-top: 23px;
 }
 .img {
   height: 50px;
 }
+.img9 {
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .res {
-  border: solid;
   border-radius: 15px;
   margin-left: 10px;
+  padding: 10px;
+  border: solid;
+  border-color: silver;
 }
 .image {
   align-self: flex-end;
 }
 .inside {
   border: solid;
+  border-color: #4775d1;
+  border-width: 1px;
+  border-radius: 8px;
   height: 60vh;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  background-color: rgba(246, 250, 250, 0.897);
 }

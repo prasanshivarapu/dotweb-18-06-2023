@@ -3,7 +3,13 @@ import {Component} from 'react'
 import './index.css'
 
 class Expert extends Component {
-  state = {isrun: true}
+  state = {isrun: false}
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({isrun: true})
+    }, 2000)
+  }
 
   btn = () => {
     this.setState(p => ({isrun: !p.isrun}))
@@ -15,8 +21,9 @@ class Expert extends Component {
       <div className="last">
         <div className="inside">
           <div>
-            <h1 className="free">Free Consultation by Expert</h1>
+            <li className="free">Free Consultation by Expert</li>
           </div>
+          <hr className="lin" />
           <form>
             <div className="her">
               <input
@@ -24,7 +31,7 @@ class Expert extends Component {
                 type="text"
                 id="name"
                 name="name"
-                placeholder="name"
+                placeholder="Your Name"
                 onChange={this.nameIn}
               />
             </div>
@@ -33,7 +40,7 @@ class Expert extends Component {
                 type="email"
                 className="input5"
                 id="email"
-                name="email"
+                name="Email Address"
                 placeholder="Email"
                 onChange={this.emailIn}
               />
@@ -48,7 +55,7 @@ class Expert extends Component {
                   className="input6"
                   id="mobile"
                   name="mobile"
-                  placeholder="Mobile no"
+                  placeholder="Mobile Number"
                   onChange={this.mobileIn}
                 />
               </div>
@@ -76,6 +83,7 @@ class Expert extends Component {
                 src="https://res.cloudinary.com/dzleppv07/image/upload/v1687023389/right-and-wrong-vector-design-illustration-isolated-on-transparent-background-free-png_ibfbhh.png"
               />
             </button>
+
             <div className="close">
               <div className="wr">
                 <div className="res">
@@ -88,10 +96,10 @@ class Expert extends Component {
                   </div>
                   <div className="down">
                     <img
-                      className="img"
+                      className="img9"
                       src="https://res.cloudinary.com/dzleppv07/image/upload/v1687022850/800px-IMessage_logo.svg_cuk0yn.png"
                     />
-                    <p>Hey Im suchi! lets talk</p>
+                    <p className="ey">Hey Im suchi! lets talk</p>
                   </div>
                 </div>
               </div>
